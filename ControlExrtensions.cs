@@ -1,9 +1,7 @@
 ﻿namespace FeePay.Integrations.Domain.Extensions
 {
-    using System;
-    using System.Collections.Generic;
     using System.Windows.Forms;
-    using Library.Extensions;
+    using System.Drawing;
 
     public static class ControlExtensions
     {
@@ -24,49 +22,79 @@
                 control.Refresh();
             }
         }
-        
+
         /// <summary>
-        /// Loads the list items.
+        /// Sets the allow drop.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="TK">The type of the k.</typeparam>
-        /// <param name="lb">The lb.</param>
-        /// <param name="items">The items.</param>
-        /// <param name="func">The function.</param>
-        public static void LoadListItems<T, TK>(this ListBox lb, ICollection<T> items, Func<T, TK> func)
+        /// <param name="control">The control.</param>
+        /// <param name="allow">if set to <c>true</c> [allow].</param>
+        public static void SetAllowDrop(this Control control, bool allow)
         {
-            if (lb.InvokeRequired)
+            if (control.InvokeRequired)
             {
-                lb.BeginInvoke(new MethodInvoker(() => lb.LoadListItems(items, func)));
+                control.BeginInvoke(new MethodInvoker(() => control.SetAllowDrop(allow)));
             }
             else
             {
-                lb.Items.Clear();
-                var newItems = items.Map(func);
-
-                foreach (var item in newItems)
-                {
-                    lb.Items.Add(item);
-                }
+                control.AllowDrop = allow;
+                control.Refresh();
             }
         }
 
         /// <summary>
-        /// Sets the text.
+        /// Sets the color of the back.
         /// </summary>
-        /// <param name="label">The label.</param>
-        /// <param name="text">The text.</param>
-        public static void SetText(this Label label, string text)
+        /// <param name="control">The control.</param>
+        /// <param name="color">The color.</param>
+        public static void SetBackColor(this Control control, Color color)
         {
-            if (label.InvokeRequired)
+            if (control.InvokeRequired)
             {
-                label.BeginInvoke(new MethodInvoker(() => label.SetText(text)));
+                control.BeginInvoke(new MethodInvoker(() => control.SetBackColor(color)));
             }
             else
             {
-                label.Text = text;
-                label.Refresh();
+                control.BackColor = color;
+                control.Refresh();
             }
         }
+
+        /// <summary>
+        /// Sets the background image.
+        /// </summary>
+        /// <param name="control">The control.</param>
+        /// <param name="image">The image.</param>
+        public static void SetBackgroundImage(this Control control, Image image)
+        {
+            if (control.InvokeRequired)
+            {
+                control.BeginInvoke(new MethodInvoker(() => control.SetBackgroundImage(image)));
+            }
+            else
+            {
+                control.BackgroundImage = image;
+                control.Refresh();
+            }
+        }
+
+        /// <summary>
+        /// Sets the background image layout.
+        /// </summary>
+        /// <param name="control">The control.</param>
+        /// <param name="imageLayout">The image layout.</param>
+        public static void SetBackgroundImageLayout(this Control control, ImageLayout imageLayout)
+        {
+            if (control.InvokeRequired)
+            {
+                control.BeginInvoke(new MethodInvoker(() => control.SetBackgroundImageLayout(imageLayout)));
+            }
+            else
+            {
+                control.BackgroundImageLayout = imageLayout;
+                control.Refresh();
+            }
+        }        
+
     }
+
 }
