@@ -1,5 +1,6 @@
 ﻿namespace FeePay.Integrations.Domain.Extensions
 {
+    using System.Collections;
     using System.Drawing;
     using System.Windows.Forms;
 
@@ -257,22 +258,238 @@
             }
         }
 
+        /// <summary>
+        /// Sets the right to left layout.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">if set to <c>true</c> [value].</param>
+        public static void SetRightToLeftLayout(this TreeView treeView, bool value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetRightToLeftLayout(value)));
+            }
+            else
+            {
+                treeView.RightToLeftLayout = value;
+                treeView.Refresh();
+            }
+        }
 
+        /// <summary>
+        /// Sets the scrollable.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">if set to <c>true</c> [value].</param>
+        public static void SetScrollable(this TreeView treeView, bool value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetScrollable(value)));
+            }
+            else
+            {
+                treeView.Scrollable = value;
+                treeView.Refresh();
+            }
+        }
+        
+        /// <summary>
+        /// Sets the index of the selected image.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">The value.</param>
+        public static void SetSelectedImageIndex(this TreeView treeView, int value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetSelectedImageIndex(value)));
+            }
+            else
+            {
+                treeView.SelectedImageIndex = value;
+                treeView.Refresh();
+            }
+        }
 
+        /// <summary>
+        /// Sets the selected image key.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">The value.</param>
+        public static void SetSelectedImageKey(this TreeView treeView, string value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetSelectedImageKey(value)));
+            }
+            else
+            {
+                treeView.SelectedImageKey = value;
+                treeView.Refresh();
+            }
+        }
+        
+        /// <summary>
+        /// Sets the selected node.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">The value.</param>
+        public static void SetSelectedNode(this TreeView treeView, TreeNode value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetSelectedNode(value)));
+            }
+            else
+            {
+                treeView.SelectedNode = value;
+                treeView.Refresh();
+            }
+        }
 
+        /// <summary>
+        /// Sets the show lines.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">if set to <c>true</c> [value].</param>
+        public static void SetShowLines(this TreeView treeView, bool value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetShowLines(value)));
+            }
+            else
+            {
+                treeView.ShowLines = value;
+                treeView.Refresh();
+            }
+        }
 
+        /// <summary>
+        /// Sets the show node tool tips.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">if set to <c>true</c> [value].</param>
+        public static void SetShowNodeToolTips(this TreeView treeView, bool value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetShowNodeToolTips(value)));
+            }
+            else
+            {
+                treeView.ShowNodeToolTips = value;
+                treeView.Refresh();
+            }
+        }
 
+        /// <summary>
+        /// Sets the show plus minus.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">if set to <c>true</c> [value].</param>
+        public static void SetShowPlusMinus(this TreeView treeView, bool value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetShowPlusMinus(value)));
+            }
+            else
+            {
+                treeView.ShowPlusMinus = value;
+                treeView.Refresh();
+            }
+        }
 
+        /// <summary>
+        /// Sets the show root lines.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">if set to <c>true</c> [value].</param>
+        public static void SetShowRootLines(this TreeView treeView, bool value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetShowRootLines(value)));
+            }
+            else
+            {
+                treeView.ShowRootLines = value;
+                treeView.Refresh();
+            }
+        }
 
+        /// <summary>
+        /// Sets the sorted.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">if set to <c>true</c> [value].</param>
+        public static void SetSorted(this TreeView treeView, bool value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetSorted(value)));
+            }
+            else
+            {
+                treeView.Sorted = value;
+                treeView.Refresh();
+            }
+        }
 
+        /// <summary>
+        /// Sets the state image list.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">The value.</param>
+        public static void SetStateImageList(this TreeView treeView, ImageList value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetStateImageList(value)));
+            }
+            else
+            {
+                treeView.StateImageList = value;
+                treeView.Refresh();
+            }
+        }
 
+        /// <summary>
+        /// Sets the top node.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">The value.</param>
+        public static void SetTopNode(this TreeView treeView, TreeNode value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetTopNode(value)));
+            }
+            else
+            {
+                treeView.TopNode = value;
+                treeView.Refresh();
+            }
+        }
 
-
-
-
-
-
-
-
+        /// <summary>
+        /// Sets the TreeView node sorter.
+        /// </summary>
+        /// <param name="treeView">The tree view.</param>
+        /// <param name="value">The value.</param>
+        public static void SetTreeViewNodeSorter(this TreeView treeView, IComparer value)
+        {
+            if (treeView.InvokeRequired)
+            {
+                treeView.BeginInvoke(new MethodInvoker(() => treeView.SetTreeViewNodeSorter(value)));
+            }
+            else
+            {
+                treeView.TreeViewNodeSorter = value;
+                treeView.Refresh();
+            }
+        }
     }
 }
