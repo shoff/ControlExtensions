@@ -10,7 +10,7 @@
         /// </summary>
         /// <param name="control">The control.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
-        public static void SetAutoScroll(this ScrollableControl control, bool value)
+         public static void SetAutoScroll(this ScrollableControl control, bool value)
         {
             if (control.InvokeRequired)
             {
