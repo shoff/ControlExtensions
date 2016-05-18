@@ -7,7 +7,7 @@
     public static class TreeViewExtensions
     {
         /// <summary>
-        /// Sets the border style.
+        ///     Sets the border style.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="borderStyle">The border style.</param>
@@ -25,7 +25,7 @@
         }
 
         /// <summary>
-        /// Sets the check boxes.
+        ///     Sets the check boxes.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -43,7 +43,7 @@
         }
 
         /// <summary>
-        /// Sets the draw mode.
+        ///     Sets the draw mode.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -61,7 +61,7 @@
         }
 
         /// <summary>
-        /// Sets the full row select.
+        ///     Sets the full row select.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -79,7 +79,7 @@
         }
 
         /// <summary>
-        /// Sets the hide selection.
+        ///     Sets the hide selection.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -97,7 +97,7 @@
         }
 
         /// <summary>
-        /// Sets the hot tracking.
+        ///     Sets the hot tracking.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -115,7 +115,7 @@
         }
 
         /// <summary>
-        /// Sets the index of the image.
+        ///     Sets the index of the image.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -133,7 +133,7 @@
         }
 
         /// <summary>
-        /// Sets the image key.
+        ///     Sets the image key.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -151,7 +151,7 @@
         }
 
         /// <summary>
-        /// Sets the image list.
+        ///     Sets the image list.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -169,7 +169,7 @@
         }
 
         /// <summary>
-        /// Sets the indent.
+        ///     Sets the indent.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -187,7 +187,7 @@
         }
 
         /// <summary>
-        /// Sets the height of the item.
+        ///     Sets the height of the item.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -205,7 +205,7 @@
         }
 
         /// <summary>
-        /// Sets the label edit.
+        ///     Sets the label edit.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -221,9 +221,9 @@
                 treeView.Refresh();
             }
         }
-        
+
         /// <summary>
-        /// Sets the color of the line.
+        ///     Sets the color of the line.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -241,7 +241,7 @@
         }
 
         /// <summary>
-        /// Sets the path separator.
+        ///     Sets the path separator.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -259,7 +259,7 @@
         }
 
         /// <summary>
-        /// Sets the right to left layout.
+        ///     Sets the right to left layout.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -277,7 +277,7 @@
         }
 
         /// <summary>
-        /// Sets the scrollable.
+        ///     Sets the scrollable.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -293,9 +293,9 @@
                 treeView.Refresh();
             }
         }
-        
+
         /// <summary>
-        /// Sets the index of the selected image.
+        ///     Sets the index of the selected image.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -313,7 +313,7 @@
         }
 
         /// <summary>
-        /// Sets the selected image key.
+        ///     Sets the selected image key.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -329,9 +329,9 @@
                 treeView.Refresh();
             }
         }
-        
+
         /// <summary>
-        /// Sets the selected node.
+        ///     Sets the selected node.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -349,7 +349,7 @@
         }
 
         /// <summary>
-        /// Sets the show lines.
+        ///     Sets the show lines.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -367,7 +367,7 @@
         }
 
         /// <summary>
-        /// Sets the show node tool tips.
+        ///     Sets the show node tool tips.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -385,7 +385,7 @@
         }
 
         /// <summary>
-        /// Sets the show plus minus.
+        ///     Sets the show plus minus.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -403,7 +403,7 @@
         }
 
         /// <summary>
-        /// Sets the show root lines.
+        ///     Sets the show root lines.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -421,7 +421,7 @@
         }
 
         /// <summary>
-        /// Sets the sorted.
+        ///     Sets the sorted.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">if set to <c>true</c> [value].</param>
@@ -439,7 +439,7 @@
         }
 
         /// <summary>
-        /// Sets the state image list.
+        ///     Sets the state image list.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -457,7 +457,7 @@
         }
 
         /// <summary>
-        /// Sets the top node.
+        ///     Sets the top node.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
@@ -475,7 +475,7 @@
         }
 
         /// <summary>
-        /// Sets the TreeView node sorter.
+        ///     Sets the TreeView node sorter.
         /// </summary>
         /// <param name="treeView">The tree view.</param>
         /// <param name="value">The value.</param>
